@@ -736,6 +736,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 
 - (IBAction)doClose:(id)sender {
     [self dismissModalViewControllerAnimated:YES];
+    NSLog(@"I am here");
     [self.delegate scanningFinished:@"" withType:@"Cancel" andRawResult:[[NSData alloc] init]];
     
 }
